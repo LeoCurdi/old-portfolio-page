@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css"> <!-- this links the css file to this html file -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link for the social icons in the footer of the page -->
+        <!--<script src="https://cdn.tailwindcss.com"></script>  hook up a link that lets u use tailwind -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MT8EKZF7SX"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MT8EKZF7SX');
+        </script>
+        <!-- end of google tag -->
+    </head>
+    <body>
+<!-- Header block -->
+        <div class="headerNav">
+    <!-- header -->
+            <header class="header">
+                <h1 class="headerH1">Leonardo Curdi - Full Stack Developer</h1>
+            </header>
+    <!-- Navigation topbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="#" class="navTopA2">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="Resume.pdf" class="resume">Resume</a></li> <!-- Add the target="_blank" attribute to the anchor tag to ensure that the PDF opens in a new browser tab or window. -->
+                </ul>
+            </nav>
+        </div>
+        <main class="portfolioPgMain">
+<!-- Main block -->
+            <div class="portfolioTitle">
+              <h1>My Projects</h1>
+            </div>
+            <div class="projectGrid">
+            <!-- This is the start of a row of 3 projects -->
+                <div class="projectTile">
+                  <a href="https://sortingvisualizer.ldcurdi.com/">
+                    <img src="pics/sortingVisualizer.png" alt="Sorting Visualizer">
+                    <div class="projectDescription">
+                      <p>Leveraged Javascript, HTML, and CSS to visualize various sorting algorithms. An array is randomly generated and displayed as vertical bars, the user can adjust the size of the array and speed of the algorithm being visualized. Each step of the algorithm from start to finish is highlighted through color changing and moving bars.</p>
+                      <p>Included algorithms: bubble, selection, insertion, quick, merge.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Sorting Visualizer</h2>
+                    </div>
+                    <div class="projectBorder"></div> <!-- this div exists solely for creating a duplicate image border that hides the corners of the project title when they start cutting down into the border -->
+                  </a>
+                </div>
+                <div class="projectTile">
+                  <a href="https://matrix.ldcurdi.com/">
+                    <img src="pics/matrix.png" alt="Matrix Screensaver">
+                    <div class="projectDescription">
+                      <p>Used Python along with the Pygame module to create a matrix rain effect. Columns of characters from the Katakana alphabet generate randomly and "rain" down the screen. Used Pygbag to convert the Pygame window into a hostable webpage.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Matrix Screensaver</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div>
+                <div class="projectTile">
+                  <a href="https://cosmicclash.ldcurdi.com/">
+                    <img src="pics/cosmicClash.png" alt="Cosmic Clash">
+                    <div class="projectDescription">
+                      <p>Cosmic Clash is an arcade style shooting game inspired by Agar.io. The player moves around the screen, shooting enemies which explode on impact, collects ammo, and tries not to get eaten by the enemies. The randomly generated enemies are aware of and target the player.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Cosmic Clash</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div>
+                <!-- This is the end of a row of 3 projects -->
+                <div class="projectTile">
+                  <a href="https://physics.ldcurdi.com/">
+                    <img src="pics/physicsSimulator.png" alt="Physics Simulator">
+                    <div class="projectDescription">
+                      <p>Physics simulator description.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Physics Simulator</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div>
+                <div class="projectTile">
+                  <a href="https://math.ldcurdi.com/">
+                    <img src="pics/mandelbrot.jpg" alt="Mandelbrot">
+                    <div class="projectDescription">
+                      <p>Math Visualizations description.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Math Visualizations</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div>
+                <!-- <div class="projectTile">
+                  <a href="#">
+                    <img src="pics/redditClone.png" alt="Reddit Clone">
+                    <div class="projectDescription">
+                      <p>Reddit is an American social news aggregation, content rating, and discussion website. Registered users submit content to the site such as links, text posts, images, and videos, which are then voted up or down by other members.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Reddit Clone</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div>
+                <div class="projectTile">
+                  <a href="#">
+                    <img src="pics/pathfindingVisualizer.png" alt="Pathfinding Visualizer">
+                    <div class="projectDescription">
+                      <p>Pathfinding visualizer description.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Pathfinding Visualizer</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div>
+                <div class="projectTile">
+                  <a href="#">
+                    <img src="pics/terraria.png" alt="Terraria">
+                    <div class="projectDescription">
+                      <p>Terraria is an action-adventure sandbox game developed by Re-Logic. The game was first released for Windows on May 16, 2011, and has since been ported to several other platforms. The game features exploration, crafting, building, painting, and combat with a variety of creatures in a procedurally generated 2D world.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Terraria</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div>
+                <div class="projectTile">
+                  <a href="#">
+                    <img src="pics/mario.jpg" alt="Mario Bros">
+                    <div class="projectDescription">
+                      <p>Mario Bros. is a 1983 arcade game developed and published for arcades by Nintendo. It was designed by Shigeru Miyamoto and Gunpei Yokoi, Nintendo's chief engineer. Italian twin brother plumbers Mario and Luigi exterminate creatures emerging from the sewers by knocking them upside-down and kicking them away.</p>
+                    </div>
+                    <div class="projectTitle">
+                      <h2>Mario Bros</h2>
+                    </div>
+                    <div class="projectBorder"></div>
+                  </a>
+                </div> -->
+            </div>
+        </main>
+<!-- Footer block -->
+        <footer>
+    <!-- Footer content -->
+            <!-- <p class="footerC">&copy; 2023</p><p> All rights reserved.</p> -->
+            <a href="https://github.com/LeoCurdi" class="fa fa-github"></a>
+            <a href="http://www.linkedin.com/in/leo-curdi" class="fa fa-linkedin"></a>
+            <a href="mailto:leonardo.curdi@wsu.edu" class="fa fa-envelope"></a>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>

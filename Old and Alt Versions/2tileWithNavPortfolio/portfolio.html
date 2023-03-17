@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css"> <!-- this links the css file to this html file -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link for the social icons in the footer of the page -->
+        <!--<script src="https://cdn.tailwindcss.com"></script>  hook up a link that lets u use tailwind -->
+    </head>
+    <body>
+<!-- Header block -->
+        <div class="headerNav">
+    <!-- header -->
+            <header class="header">
+                <h1>Leonardo Curdi - Full Stack Developer</h1>
+            </header>
+    <!-- Navigation topbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="#" class="navTopA2">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="Resume.pdf" class="resume">Resume</a></li> <!-- Add the target="_blank" attribute to the anchor tag to ensure that the PDF opens in a new browser tab or window. -->
+                </ul>
+            </nav>
+        </div>
+        <main>
+<!-- Main block -->
+            <div class="navSideAndContent">
+        <!-- Navigation sidebar -->
+                <div class="navSide">
+                    <p style="font-size: 1.3rem;">My Projects</p>
+                    <a href="https://game2.ldcurdi.com/" target="_blank">Shooter Game</a>
+                    <a href="https://game.ldcurdi.com/" target="_blank">Agar.io</a>
+                    <a href="https://matrix.ldcurdi.com/" target="_blank">Matrix</a>
+                    <p style="font-size: 0.6rem; padding-top: 15px;"> ** this sidebar can be used to jump down to sections in the portfolio (ex games, websites, etc), or removed entirely **</p>
+                </div>
+        <!-- Main content -->
+                <div class="projectGrid">
+                <!-- This is the start of a column of 2 projects -->
+                    <div class="project">
+                      <a href="https://sortingvisualizer.ldcurdi.com/" target="_blank">
+                        <img src="pics/sortingVisualizer.png" alt="Sorting Visualizer">
+                        <div class="projectTitle">
+                          <h2>Sorting Visualizer</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="project">
+                      <a href="https://matrix.ldcurdi.com/" target="_blank">
+                        <img src="pics/matrix.png" alt="Matrix Screensaver">
+                        <div class="projectTitle">
+                          <h2>Matrix Screensaver</h2>
+                        </div>
+                      </a>
+                    </div>
+                <!-- This is the end of a column of 2 projects -->
+                    <div class="project">
+                      <a href="#" target="_blank">
+                        <img src="pics/terraria.png" alt="Terraria">
+                        <div class="projectTitle">
+                          <h2>Terraria</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="project">
+                      <a href="#" target="_blank">
+                        <img src="pics/mario.jpg" alt="Mario Bros">
+                        <div class="projectTitle">
+                          <h2>Mario Bros</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="project">
+                      <a href="#" target="_blank">
+                        <img src="pics/redditClone.png" alt="Reddit Clone">
+                        <div class="projectTitle">
+                          <h2>Reddit Clone</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="project">
+                      <a href="https://game2.ldcurdi.com/" target="_blank">
+                        <img src="pics/game0.png" alt="Shooting Game">
+                        <div class="projectTitle">
+                          <h2>Shooting Game</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="project">
+                      <a href="#" target="_blank">
+                        <img src="pics/pathfindingVisualizer.png" alt="Pathfinding Visualizer">
+                        <div class="projectTitle">
+                          <h2>Pathfinding Visualizer</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="project">
+                      <a href="#" target="_blank">
+                        <img src="pics/physicsSimulator.png" alt="Physics Simulator">
+                        <div class="projectTitle">
+                          <h2>Physics Simulator</h2>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!-- Footer block -->
+        <footer>
+    <!-- Footer content -->
+            <!-- <p class="footerC">&copy; 2023</p><p> All rights reserved.</p> -->
+            <a href="https://github.com/LeoCurdi" class="fa fa-github"></a>
+            <a href="http://www.linkedin.com/in/leo-curdi" class="fa fa-linkedin"></a>
+            <a href="mailto:leonardo.curdi@wsu.edu" class="fa fa-envelope"></a>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>

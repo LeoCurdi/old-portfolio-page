@@ -1,0 +1,222 @@
+/* this is stuff that applies across the whole page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Header block */
+    /* Header */
+        header {
+          box-sizing: border-box;
+          background-color: #333;
+          color: #fff;
+          padding: 1px;
+        }
+        header h1 {
+          padding-left: 1%;
+          /*font-family: 'Roboto', sans-serif;*/ /* linked fonts: Montserrat, Open Sans, Robotto. or use no font */
+          /*font-weight: 600;*/
+          font-size: 2.1vw; /* base the header font size off of the width of the screen */
+        }
+
+    /* Navigation topbar */
+        .navbar {
+          box-sizing: border-box; /* prevents the element from extending behind a vertical scroll bar when width is set to 100% */
+          position: relative;
+          left: 0;
+          width: 100%;
+          z-index: 999;
+          transition: top 0.01s ease;
+          height: 38px;
+        }
+        nav {
+          background-color: #ececec;
+          border-bottom: 0px solid #ccc;
+          padding: 10px;
+          margin-bottom: -2px;
+        }
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: right;
+          margin-right: 15px;
+        }
+        nav li {
+          display: inline-block;
+          margin-left: 2.4vw; /* stops the resume link from cutting down to a new line on mobile */
+        }
+        nav a {
+          color: #333;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 0px;
+          margin-left: 0px;
+          transition: font-size 0.2s ease-out, margin-top 0.2s ease-out, margin-left 0.2s ease-out;
+        }
+        nav a:hover {
+          font-size: 110%;
+          margin-top: -10px;
+          margin-left: -6px;
+        }
+        nav .navTopA2:hover {
+          margin-left: -5.5px;
+        }
+
+/* Main block */
+      /* About page content */
+        .aboutPgMain {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 50px 0px;
+        }
+        .portraitContainer {
+          margin-top: -15px;
+          position: relative;
+          width: 170px;
+          height: 170px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .portrait {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .aboutMe {
+          width: 60%;
+          margin-top: 20px;
+          text-align: center;
+        }
+        .aboutMe p {
+          font-size: 1.2em;
+          line-height: 1.5;
+        }
+
+      /* Portfolio page content */
+        .portfolioTitle {
+          text-align: center;
+          width: 100%;
+        }
+
+        .projectGrid {
+          text-align: center; /* this somehow centers the image tiles horizontally in main. You can center inline elements horizontally, within a block-level parent element. */
+          margin-bottom: 6%;
+        }
+
+        .projectTile {
+          width: 28%;
+          display: inline-block;
+          margin-bottom: 1.3%;
+          position: relative;
+          padding: 0%;
+        }
+        .projectTile:nth-of-type(3n - 2) { /* selects the first column of tiles */
+          margin-right: 1.3%;
+        }
+        .projectTile:nth-of-type(3n - 1) { /* selects the second column of tiles */
+            margin-right: 1.3%;
+        }
+
+        .projectTile img {
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          border: 4px #ccc solid; /* width, color, style. need all for the border to appear */
+          box-sizing: border-box; /* this makes it so the border does not increase the total size of the box */
+          margin: 0%;
+          padding: 0%;
+          display: block; /* this gets rid of the stupid padding under the image */
+        }
+
+        .projectTile {
+          font-size: 1.1vw; /* this allows the font size of the children (title and description) to always be proportional to the size of the picture */
+          border-radius: 30px;
+          overflow: hidden; /* this, along with the matching border radius, hides the project title corners when they poke out */
+        }
+
+        .projectTile h2 {
+          position: absolute;
+          /* top: 77%; */ /* controls how far down the image the title will appear */
+          bottom: 8%;
+          /* top: 9.5em; */
+          left: 0;
+          width: 100%;
+          margin: 0;
+          padding: 2.5%;
+          color: #fff;
+          background-color: rgba(163, 153, 255, 0.45);
+          box-sizing: border-box;
+          border-left: 4px #ccc solid;
+          border-right: 4px #ccc solid;
+          font-size: 1.5em;
+          text-align: center;
+        }
+
+        .projectDescription p {
+          margin: 0%; /* this gets rid of the default margin above and below a paragraph */
+        }
+
+        .projectDescription {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 3%;
+          font-size: 1.25em;
+          text-align: center;
+          color: #fff;
+          background-color: rgba(163, 153, 255, 0.75);
+          border-radius: 30px;
+          border: 4px #ccc solid; /* width, color, style. need all for the border to appear */
+          box-sizing: border-box;
+          opacity: 0;
+        }
+
+        .projectBorder { /* this div exists solely for creating a duplicate image border that hides the corners of the project title when they start cutting down into the border */
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          border: 4px #ccc solid;
+          box-sizing: border-box;
+        }
+
+
+/* Footer block */
+        footer {
+          background-color: #333;
+          color: #fff;
+          margin-bottom: -8px;
+          text-align: center;
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          font-size: 2.2rem;
+        }
+        .footerC {
+          margin-top: 8px;
+          margin-bottom: -12px;
+        }
+        .fa { /* social buttons in the footer */
+          padding-top: 8px;
+          padding-bottom: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 50%;
+          color: #fff;
+        }
+        .fa:hover {
+          opacity: 0.7;
+        }
